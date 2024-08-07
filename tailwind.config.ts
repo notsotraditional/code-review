@@ -10,6 +10,12 @@ const config: Config = {
     flowbite.content()
   ],
   theme: {
+    colors: {
+      transparent: 'transparent',
+      current: 'currentColor',
+      primary: '#007bc4',
+      secondary: '#fffbd2'
+    },
     extend: {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
