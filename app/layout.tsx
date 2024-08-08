@@ -5,6 +5,11 @@ import { Flowbite } from "flowbite-react";
 import type { CustomFlowbiteTheme } from "flowbite-react";
 
 const TunlTheme: CustomFlowbiteTheme = {
+  spinner: {
+    color: {
+      general: "fill-primary",
+    }
+  },
   sidebar: {
     root: {
       inner: "h-screen p-5 bg-primary",
@@ -28,10 +33,12 @@ const TunlTheme: CustomFlowbiteTheme = {
       base: "flex items-center gap-3 text-secondary hover:text-primary hover:bg-secondary p-3 rounded-lg transition-all",
       icon: {
         base: "w-5 h-5",
+        active: 'text-primary',
       },
       content: {
         base: "flex items-center gap-2 text-base",
-      }
+      },
+      active: "flex items-center gap-3 text-primary bg-secondary p-3 rounded-lg transition-all",
     }
   }
 };

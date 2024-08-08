@@ -5,13 +5,13 @@ import { Sidebar } from "flowbite-react";
 import { HiArrowSmLeft, HiChartPie, HiClock, HiShoppingBag, HiUser, HiTruck, HiPlus, HiCheckCircle } from "react-icons/hi";
 import Logo from '../../public/logo.png'
 
-const Navigation = () : React.ReactElement => {
+const Navigation: React.FC = () : React.ReactElement => {
   return (
     <Sidebar aria-label="Tunl Menu" className="h-screen">
      <Sidebar.Logo href="/" img={Logo.src} imgAlt="Tunl Logo"/>
       <Sidebar.Items className="mt-10">
         <Sidebar.ItemGroup>
-          <Sidebar.Item href="#" icon={HiChartPie}>
+          <Sidebar.Item href="#" icon={HiChartPie} active={true}>
             Dashboard
           </Sidebar.Item>
           <Sidebar.Collapse icon={HiTruck} label="Shipments">
