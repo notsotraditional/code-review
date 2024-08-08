@@ -9,8 +9,23 @@ const TunlTheme: CustomFlowbiteTheme = {
     root: {
       inner: "h-screen p-5 bg-primary",
     },
+    collapse: {
+      button: 'flex items-center text-secondary p-3 rounded-lg transition-all hover:text-primary hover:bg-secondary',
+      icon: {
+        base: "w-5 h-5",
+        open: {
+          on: "text-secondary",
+          off: "text-secondary"
+        }
+      },
+      label: {
+          icon: {
+            base: "ml-3 w-5 h-5",
+          },
+      }
+    },
     item: {
-      base: "flex items-center mb-5 gap-3 text-secondary hover:text-primary hover:bg-secondary p-3 rounded-lg transition-all",
+      base: "flex items-center gap-3 text-secondary hover:text-primary hover:bg-secondary p-3 rounded-lg transition-all",
       icon: {
         base: "w-5 h-5",
       },

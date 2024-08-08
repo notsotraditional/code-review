@@ -2,7 +2,7 @@
 "use client"
 
 import { Sidebar } from "flowbite-react";
-import { HiArrowSmLeft, HiChartPie, HiInbox, HiShoppingBag, HiUser, HiTruck } from "react-icons/hi";
+import { HiArrowSmLeft, HiChartPie, HiClock, HiShoppingBag, HiUser, HiTruck, HiPlus, HiCheckCircle } from "react-icons/hi";
 import Logo from '../../public/logo.png'
 
 const Navigation = () : React.ReactElement => {
@@ -14,9 +14,17 @@ const Navigation = () : React.ReactElement => {
           <Sidebar.Item href="#" icon={HiChartPie}>
             Dashboard
           </Sidebar.Item>
-          <Sidebar.Item href="#" icon={HiTruck}>
-            Shipments
-          </Sidebar.Item>
+          <Sidebar.Collapse icon={HiTruck} label="Shipments">
+            <Sidebar.Item href="/shipments/active" icon={HiPlus}>
+              New Shipment
+            </Sidebar.Item>
+            <Sidebar.Item href="/products" icon={HiClock}>
+              In Progress
+            </Sidebar.Item>
+            <Sidebar.Item href="/products" icon={HiCheckCircle}>
+              Delivered
+            </Sidebar.Item>
+          </Sidebar.Collapse>
           <Sidebar.Item href="#" icon={HiShoppingBag}>
             Products
           </Sidebar.Item>
