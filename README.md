@@ -8,19 +8,17 @@
 1. Clone the repository
 2. Install dependencies
 
-```bash pnpm i```
-
+`bash pnpm i`
 
 ## Getting Started
 
 1. Run the development server
 
-```bash pnpm dev```
+`bash pnpm dev`
 
 4. Vist the application at http://localhost:3000/company/dashboard
 
 URL is created to simulate a mock authenticated environment.
-
 
 ## About the project
 
