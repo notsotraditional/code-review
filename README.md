@@ -8,13 +8,13 @@
 1. Clone the repository
 2. Install dependencies
 
-`bash pnpm i`
+`pnpm i`
 
 ## Getting Started
 
 1. Run the development server
 
-`bash pnpm dev`
+`pnpm dev`
 
 4. Vist the application at http://localhost:3000/company/dashboard
 
